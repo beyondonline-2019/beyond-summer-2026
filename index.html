@@ -485,14 +485,119 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
   </div>
   <div class="reg-form">
     <div class="rf-title">Đăng ký tư vấn miễn phí</div>
-    <div class="fg-row"><div class="fg"><label>Họ tên phụ huynh</label><input type="text" placeholder="Nguyễn Thị Lan"></div><div class="fg"><label>Số điện thoại / Zalo</label><input type="tel" placeholder="0901 234 567"></div></div>
-    <div class="fg-row"><div class="fg"><label>Tên bé</label><input type="text" placeholder="Tên bé yêu"></div><div class="fg"><label>Lớp học (2025–2026)</label><select><option value="">Chọn lớp</option><option>Lớp 1</option><option>Lớp 2</option><option>Lớp 3</option><option>Lớp 4</option><option>Lớp 5</option></select></div></div>
-    <div class="fg"><label>Quan tâm đến</label><select><option value="">Chọn gói</option><option>⭐ Gói 5 tuần — 4.990.000 ₫</option><option>⚡ Early Bird — 4.690.000 ₫ (trước 30/5)</option><option>📅 Theo tuần — 1.190.000 ₫/tuần</option><option>❓ Muốn tư vấn thêm</option></select></div>
-    <div class="fg"><label>Tuần quan tâm</label><select><option value="">Chọn tuần</option><option>🏮 Tuần 1 · BE-BRIGHT · Mid-Autumn</option><option>🎭 Tuần 2 · BE-BOLD · Carnival</option><option>🌸 Tuần 3 · BE-ZEN · Hanami</option><option>🪔 Tuần 4 · BE-GLOWING · Diwali</option><option>🎃 Tuần 5 · BE-BRAVE · Halloween</option><option>🌟 Cả 5 tuần</option></select></div>
-    <div class="fg"><label>Ghi chú (không bắt buộc)</label><textarea placeholder="Câu hỏi về chương trình, lịch học hoặc bé của ba mẹ…"></textarea></div>
-    <button class="btn-reg" onclick="alert('Cảm ơn ba mẹ đã đăng ký! Đội ngũ Beyond English sẽ liên hệ trong vòng 24 giờ 💛')">Gửi đăng ký → Tư vấn miễn phí</button>
-    <p class="form-note">Hoàn toàn miễn phí · Không ràng buộc · Beyond liên hệ sớm nhất</p>
+
+    <!-- SUCCESS STATE -->
+    <div id="form-success" style="display:none;text-align:center;padding:40px 20px">
+      <div style="font-size:3rem;margin-bottom:16px">🎉</div>
+      <div style="font-size:1.2rem;font-weight:900;color:var(--purple-dk);margin-bottom:10px">Đã nhận thông tin!</div>
+      <p style="font-family:'Pangolin',cursive;font-size:.95rem;color:var(--purple);line-height:1.8">Cảm ơn ba mẹ đã đăng ký.<br>Đội ngũ Beyond English sẽ liên hệ qua Zalo hoặc điện thoại trong vòng <strong>24 giờ</strong> 💛</p>
+    </div>
+
+    <!-- FORM -->
+    <form id="reg-form-el"
+          action="https://formspree.io/f/xnjlzgrv"
+          method="POST">
+
+      <!-- Honeypot spam protection -->
+      <input type="text" name="_gotcha" style="display:none">
+      <!-- Subject line in email -->
+      <input type="hidden" name="_subject" value="[Beyond Summer 2026] Đăng ký mới từ website">
+
+      <div class="fg-row">
+        <div class="fg">
+          <label for="parent_name">Họ tên phụ huynh <span style="color:var(--coral)">*</span></label>
+          <input type="text" id="parent_name" name="Ho_ten_phu_huynh" placeholder="Nguyễn Thị Lan" required>
+        </div>
+        <div class="fg">
+          <label for="phone">Số điện thoại / Zalo <span style="color:var(--coral)">*</span></label>
+          <input type="tel" id="phone" name="So_dien_thoai_Zalo" placeholder="0901 234 567" required>
+        </div>
+      </div>
+
+      <div class="fg-row">
+        <div class="fg">
+          <label for="child_name">Tên bé <span style="color:var(--coral)">*</span></label>
+          <input type="text" id="child_name" name="Ten_be" placeholder="Tên bé yêu" required>
+        </div>
+        <div class="fg">
+          <label for="grade">Lớp học (2025–2026) <span style="color:var(--coral)">*</span></label>
+          <select id="grade" name="Lop_hoc" required>
+            <option value="">Chọn lớp</option>
+            <option>Lớp 1</option>
+            <option>Lớp 2</option>
+            <option>Lớp 3</option>
+            <option>Lớp 4</option>
+            <option>Lớp 5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fg">
+        <label for="package">Quan tâm đến gói</label>
+        <select id="package" name="Goi_dang_ky">
+          <option value="">Chọn gói</option>
+          <option>⭐ Gói 5 tuần — 4.990.000 ₫</option>
+          <option>⚡ Early Bird — 4.690.000 ₫ (trước 30/5)</option>
+          <option>📅 Theo tuần — 1.190.000 ₫/tuần</option>
+          <option>❓ Muốn tư vấn thêm</option>
+        </select>
+      </div>
+
+      <div class="fg">
+        <label for="week">Tuần / lễ hội quan tâm</label>
+        <select id="week" name="Tuan_quan_tam">
+          <option value="">Chọn tuần</option>
+          <option>🏮 Tuần 1 · BE-BRIGHT · Mid-Autumn</option>
+          <option>🎭 Tuần 2 · BE-BOLD · Carnival</option>
+          <option>🌸 Tuần 3 · BE-ZEN · Hanami</option>
+          <option>🪔 Tuần 4 · BE-GLOWING · Diwali</option>
+          <option>🎃 Tuần 5 · BE-BRAVE · Halloween</option>
+          <option>🌟 Cả 5 tuần</option>
+        </select>
+      </div>
+
+      <div class="fg">
+        <label for="note">Ghi chú (không bắt buộc)</label>
+        <textarea id="note" name="Ghi_chu" placeholder="Câu hỏi về chương trình, lịch học hoặc bé của ba mẹ…"></textarea>
+      </div>
+
+      <button type="submit" class="btn-reg" id="submit-btn">
+        Gửi đăng ký → Tư vấn miễn phí
+      </button>
+      <p class="form-note">Hoàn toàn miễn phí · Không ràng buộc · Beyond liên hệ sớm nhất</p>
+    </form>
   </div>
+
+  <script>
+    const form = document.getElementById('reg-form-el');
+    const btn  = document.getElementById('submit-btn');
+    const success = document.getElementById('form-success');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      btn.textContent = 'Đang gửi…';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+        } else {
+          btn.textContent = 'Có lỗi — thử lại';
+          btn.disabled = false;
+        }
+      } catch(err) {
+        btn.textContent = 'Có lỗi — thử lại';
+        btn.disabled = false;
+      }
+    });
+  </script>
 </section>
 
 <!-- FOOTER -->
