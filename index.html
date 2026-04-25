@@ -155,9 +155,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .tt-sec{padding:88px 10%;background:#fff}
 .tt-note{font-family:'Pangolin',cursive;font-size:.95rem;color:var(--purple);text-align:center;margin-bottom:32px;opacity:.8}
 .tt-wrap{border-radius:20px;overflow:hidden;border:2px solid var(--purple-lt)}
-.tt-head{display:grid;grid-template-columns:130px 1fr 1fr;background:var(--purple-dk)}
+.tt-head{display:grid;grid-template-columns:130px 1fr;background:var(--purple-dk)}
 .tt-hc{padding:14px 22px;font-size:.62rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--yellow)}
-.tt-row{display:grid;grid-template-columns:130px 1fr 1fr;border-top:1px solid var(--purple-lt);transition:background .2s}
+.tt-row{display:grid;grid-template-columns:130px 1fr;border-top:1px solid var(--purple-lt);transition:background .2s}
 .tt-row:hover{background:var(--purple-bg)}
 .tt-row.hi{background:linear-gradient(90deg,#FFF9E6,var(--off-white))}
 .tt-day{padding:16px 22px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--purple);border-right:1px solid var(--purple-lt);display:flex;align-items:flex-start}
@@ -312,7 +312,7 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
     <div class="hero-stats">
       <div class="hs"><div class="hs-num">5</div><div class="hs-label">Tuần trải nghiệm<br>linh hoạt từng tuần</div></div>
       <div class="hs"><div class="hs-num">2<span class="unit">×</span></div><div class="hs-label">Pronunciation Lab<br>với GV nước ngoài/tuần</div></div>
-      <div class="hs"><div class="hs-num">2</div><div class="hs-label">Chuyến dã ngoại<br>bí mật chờ khám phá</div></div>
+
     </div>
     <div class="hero-cta-row">
       <a href="#register" class="btn-primary">Đăng ký ngay</a>
@@ -344,7 +344,7 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
       <div class="chip">🎨 Dự án sáng tạo mỗi tuần</div>
       <div class="chip">⭐ Friday Showcase — ba mẹ xem</div>
       <div class="chip">✅ Linh hoạt từng tuần</div>
-      <div class="chip">🗺️ 2 chuyến dã ngoại bí mật</div>
+
     </div>
   </div>
 </section>
@@ -359,7 +359,7 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
   <div class="highlights-grid">
     <div class="hl"><span class="hl-icon">🌍</span><div class="hl-title">Mỗi tuần là một chuyến đi mới</div><p class="hl-desc">Bé khám phá 5 lễ hội có thực trên thế giới — học từ vựng, văn hóa và câu chuyện qua hoạt động sáng tạo. Không phải bài tập, không phải sách giáo khoa — là trải nghiệm thật.</p></div>
     <div class="hl"><span class="hl-icon">🎤</span><div class="hl-title">Giờ riêng để luyện phát âm thật sự</div><p class="hl-desc">2 lần mỗi tuần, bé có trọn 90 phút tập phát âm chuyên sâu — được sửa từng âm, tập nói thật. Đây là điểm khác biệt lớn nhất của Beyond Summer 2026.</p></div>
-    <div class="hl"><span class="hl-icon">🗺️</span><div class="hl-title">2 Chuyến Dã Ngoại Bí Mật</div><p class="hl-desc">Hai lần trong hè, lớp học rời khỏi bốn bức tường — địa điểm được tiết lộ bất ngờ trong tuần đó. Đây là highlight ngoài lớp mà không bé nào muốn bỏ lỡ.</p></div>
+
   </div>
 </section>
 
@@ -411,13 +411,13 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
   </div>
   <p class="tt-note">Cấu trúc cố định mỗi tuần — lịch học ổn định, ba mẹ dễ sắp xếp công việc</p>
   <div class="tt-wrap">
-    <div class="tt-head"><div class="tt-hc">Thời gian</div><div class="tt-hc">Hoạt động</div><div class="tt-hc">Ghi chú</div></div>
-    <div class="tt-row"><div class="tt-day">8:00–9:15</div><div class="tt-cell"><div class="tt-who vn">Giáo viên người Việt</div><div class="tt-act">Session 1 — English & Discovery</div><div class="tt-det">Từ vựng lễ hội, câu chuyện chủ đề, phonics & đọc, read-aloud 10 phút</div></div><div class="tt-cell"><div class="tt-det">T2 & T5: kết nối trực tiếp chủ đề Pronunciation Lab</div></div></div>
-    <div class="tt-row"><div class="tt-day">9:15–9:30</div><div class="tt-cell"><div class="tt-act">Break & Snack</div><div class="tt-det">Vận động tự do, giao lưu xã hội</div></div><div class="tt-cell"><div class="tt-det">Giải lao</div></div></div>
-    <div class="tt-row hi"><div class="tt-day g">9:30–11:00<br>Thứ Hai & Năm</div><div class="tt-cell"><div class="tt-who">Giáo viên nước ngoài</div><div class="tt-act">🎤 BEYOND Pronunciation Lab</div><div class="tt-det">Warm-up drill → pronunciation games → structured speaking → free conversation & error coaching</div></div><div class="tt-cell"><div class="tt-det">GV người Việt quan sát, ghi chú lỗi để củng cố ngày hôm sau</div></div></div>
-    <div class="tt-row"><div class="tt-day">9:30–11:00<br>Thứ Ba & Tư</div><div class="tt-cell"><div class="tt-who vn">Giáo viên người Việt</div><div class="tt-act">Session 2 — Project Workshop</div><div class="tt-det">Làm dự án nhóm: nghiên cứu, thủ công, xây dựng, luyện thuyết trình</div></div><div class="tt-cell"><div class="tt-det">Dự án gắn lễ hội tuần đó — mang về nhà Thứ Sáu</div></div></div>
-    <div class="tt-row hi"><div class="tt-day g">⭐ 9:30–10:40<br>Thứ Sáu</div><div class="tt-cell"><div class="tt-who">Cả hai giáo viên</div><div class="tt-act">Friday Showcase</div><div class="tt-det">Học sinh thuyết trình dự án bằng tiếng Anh trước GV nước ngoài — real audience với phản hồi thực</div></div><div class="tt-cell"><div class="tt-det">Ba mẹ mời xem từ 10:45 — word-of-mouth mạnh nhất tuần</div></div></div>
-    <div class="tt-row"><div class="tt-day">10:40–11:00</div><div class="tt-cell"><div class="tt-who vn">Giáo viên người Việt</div><div class="tt-act">Wrap-up Circle</div><div class="tt-det">Nhìn lại tuần học, 1 từ mới lên tường, preview ngày mai</div></div><div class="tt-cell"><div class="tt-det">Ba mẹ đến từ 10:45 vào Thứ Sáu</div></div></div>
+    <div class="tt-head"><div class="tt-hc">Thời gian</div><div class="tt-hc">Hoạt động</div></div>
+    <div class="tt-row"><div class="tt-day">8:00–9:15</div><div class="tt-cell"><div class="tt-who vn">Giáo viên người Việt</div><div class="tt-act">Session 1 — English & Discovery</div><div class="tt-det">Từ vựng lễ hội, câu chuyện chủ đề, phonics & đọc, read-aloud 10 phút</div></div></div>
+    <div class="tt-row"><div class="tt-day">9:15–9:30</div><div class="tt-cell"><div class="tt-act">Break & Snack</div><div class="tt-det">Vận động tự do, giao lưu xã hội</div></div></div>
+    <div class="tt-row hi"><div class="tt-day g">9:30–11:00<br>Thứ Hai & Năm</div><div class="tt-cell"><div class="tt-who">Giáo viên nước ngoài</div><div class="tt-act">🎤 BEYOND Pronunciation Lab</div><div class="tt-det">Warm-up drill → pronunciation games → structured speaking → free conversation & error coaching</div></div></div>
+    <div class="tt-row"><div class="tt-day">9:30–11:00<br>Thứ Ba & Tư</div><div class="tt-cell"><div class="tt-who vn">Giáo viên người Việt</div><div class="tt-act">Session 2 — Project Workshop</div><div class="tt-det">Làm dự án nhóm: nghiên cứu, thủ công, xây dựng, luyện thuyết trình</div></div></div>
+    <div class="tt-row hi"><div class="tt-day g">⭐ 9:30–10:40<br>Thứ Sáu</div><div class="tt-cell"><div class="tt-who">Cả hai giáo viên</div><div class="tt-act">Friday Showcase</div><div class="tt-det">Học sinh thuyết trình dự án bằng tiếng Anh trước GV nước ngoài — real audience với phản hồi thực</div></div></div>
+    <div class="tt-row"><div class="tt-day">10:40–11:00</div><div class="tt-cell"><div class="tt-who vn">Giáo viên người Việt</div><div class="tt-act">Wrap-up Circle</div><div class="tt-det">Nhìn lại tuần học, 1 từ mới lên tường, preview ngày mai</div></div></div>
   </div>
 </section>
 
@@ -431,14 +431,9 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
   <p class="pricing-lead">"Chọn theo tuần khi cần linh hoạt, hoặc đặt trọn gói 5 tuần để giữ chỗ và tiết kiệm gần 1 triệu — ưu tiên đặt chỗ 2 chuyến dã ngoại bí mật."</p>
   <div class="pricing-grid">
     <div class="pcard"><div class="pcard-head"><span class="pcard-label">Standard Week · Linh hoạt từng tuần</span><div class="pcard-price"><sup>₫</sup>1.190<span style="font-size:.4em;vertical-align:baseline">.000</span></div><div class="pcard-pnote">mỗi học sinh / mỗi tuần</div></div><div class="pcard-body"><ul class="pcard-feats"><li>Đầy đủ chương trình 5 ngày</li><li>2 buổi Pronunciation Lab với GV nước ngoài</li><li>Friday project presentation</li><li>Đăng ký, bỏ, tạm dừng bất cứ lúc nào</li></ul></div><div class="pcard-foot"><a href="#register" class="pcard-btn">Đăng ký theo tuần</a></div></div>
-    <div class="pcard feat"><div class="pcard-head"><span class="pcard-label">⭐ 5-Week Package · Best Value</span><div class="pcard-price"><sup>₫</sup>4.990<span style="font-size:.38em;vertical-align:baseline">.000</span></div><div class="pcard-pnote">Tiết kiệm ~960.000 ₫ so với theo tuần</div><div class="pcard-early">Early Bird 4.690.000 ₫ — trước 30/5/2026</div></div><div class="pcard-body"><ul class="pcard-feats"><li>Toàn bộ 5 tuần — chỗ được bảo đảm</li><li>2 Pronunciation Lab/tuần với GV nước ngoài</li><li>Friday showcase mỗi tuần</li><li>Ưu tiên đặt chỗ 2 chuyến dã ngoại bí mật</li><li>Đăng ký 1 lần — xong</li></ul></div><div class="pcard-foot"><a href="#register" class="pcard-btn">Đăng ký gói 5 tuần</a></div></div>
+    <div class="pcard feat"><div class="pcard-head"><span class="pcard-label">⭐ 5-Week Package · Best Value</span><div class="pcard-price"><sup>₫</sup>4.990<span style="font-size:.38em;vertical-align:baseline">.000</span></div><div class="pcard-pnote">Tiết kiệm ~960.000 ₫ so với theo tuần</div><div class="pcard-early">Early Bird 4.690.000 ₫ — trước 24/5/2026</div></div><div class="pcard-body"><ul class="pcard-feats"><li>Toàn bộ 5 tuần — chỗ được bảo đảm</li><li>2 Pronunciation Lab/tuần với GV nước ngoài</li><li>Friday showcase mỗi tuần</li><li>Ưu tiên đặt chỗ 2 chuyến dã ngoại bí mật</li><li>Đăng ký 1 lần — xong</li></ul></div><div class="pcard-foot"><a href="#register" class="pcard-btn">Đăng ký gói 5 tuần</a></div></div>
   </div>
-  <div class="discounts" style="margin-top:28px">
-    <div class="disc"><div class="disc-saving">–300.000 ₫</div><div class="disc-name">Early Bird</div><div class="disc-cond">Gói 5 tuần trước 30/5/2026</div></div>
-    <div class="disc"><div class="disc-saving">–200.000 ₫</div><div class="disc-name">Sibling Discount</div><div class="disc-cond">Mỗi anh chị em thêm</div></div>
-    <div class="disc"><div class="disc-saving">–150.000 ₫</div><div class="disc-name">Group 3+ Friends</div><div class="disc-cond">3 bạn đăng ký cùng tuần</div></div>
-    <div class="disc"><div class="disc-saving">–250.000 ₫</div><div class="disc-name">Returning Student</div><div class="disc-cond">Học sinh Beyond Summer 2025</div></div>
-  </div>
+
 </section>
 
 <!-- MESSAGES -->
@@ -452,22 +447,8 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
     <div class="msg-item"><div class="msg-num">01</div><div><div class="msg-heading">Không chỉ học — mà là biết nói</div><p class="msg-body">Hai lần mỗi tuần, con được luyện phát âm trực tiếp với người bản ngữ. Sau 5 tuần, sự thay đổi là thấy rõ.</p></div></div>
     <div class="msg-item"><div class="msg-num">02</div><div><div class="msg-heading">5 lễ hội, 5 thế giới, 5 câu chuyện</div><p class="msg-body">Mỗi tuần con "du lịch" đến một đất nước — Trung Thu, Carnival, Hoa Anh Đào, Diwali, Halloween. Học tiếng Anh trở thành cuộc phiêu lưu.</p></div></div>
     <div class="msg-item"><div class="msg-num">03</div><div><div class="msg-heading">Mỗi Thứ Sáu — dự án thật, thuyết trình thật</div><p class="msg-body">Học sinh thuyết trình bằng tiếng Anh trước GV nước ngoài. Ba mẹ được mời xem từ 10:45. Dự án mang về nhà.</p></div></div>
-    <div class="msg-item"><div class="msg-num">04</div><div><div class="msg-heading">1 tuần hoặc cả 5 — tùy ba mẹ</div><p class="msg-body">Không áp lực cam kết. Đăng ký từng tuần theo lịch hè, hoặc đặt trọn gói 5 tuần tiết kiệm gần 1 triệu và được ưu tiên chỗ 2 chuyến dã ngoại bí mật.</p></div></div>
+    <div class="msg-item"><div class="msg-num">04</div><div><div class="msg-heading">1 tuần hoặc cả 5 — tùy ba mẹ</div><p class="msg-body">Không áp lực cam kết. Đăng ký từng tuần theo lịch hè, hoặc đặt trọn gói 5 tuần tiết kiệm gần 1 triệu.</p></div></div>
   </div>
-</section>
-
-<!-- OUTINGS -->
-<section class="outings">
-  <div class="s-hdr">
-    <span class="s-eye">Ngoài lớp học</span>
-    <h2 class="s-title">2 Chuyến Đi — Địa Điểm Bí Mật 🗺️</h2>
-    <div class="s-rule c"></div>
-  </div>
-  <div class="outings-grid">
-    <div class="outing-card"><div class="outing-num">01</div><div class="outing-label">Dã Ngoại 1 · Giữa chương trình</div><div class="outing-title">Một ngày lễ hội ra khỏi lớp học</div><p class="outing-desc">Gắn với chủ đề của tuần đó — màu sắc, ánh sáng, hoặc thiên nhiên. Địa điểm thông báo bất ngờ trong tuần: bé biết trước 1 ngày để còn hào hứng đón chờ.</p><div class="outing-price">✨ Thêm chi tiết khi đăng ký →</div></div>
-    <div class="outing-card"><div class="outing-num">02</div><div class="outing-label">Dã Ngoại 2 · Tuần cuối — Kết thúc mùa hè</div><div class="outing-title">Chuyến đi kết thúc mùa hè đáng nhớ</div><p class="outing-desc">Ba mẹ được mời tham gia — nơi bé tỏa sáng lần cuối. Địa điểm giữ bí mật đến tuần 4 để giữ nguyên sự bất ngờ cho cả gia đình.</p><div class="outing-price">✨ Dành riêng cho học sinh đăng ký →</div></div>
-  </div>
-  <div class="outing-mystery"><p>"Học sinh gói 5 tuần được ưu tiên giữ chỗ cho cả 2 chuyến 🎒 Học theo tuần có thể tham gia tùy số chỗ còn lại."</p></div>
 </section>
 
 <!-- REGISTER -->
@@ -537,7 +518,7 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
         <select id="package" name="Goi_dang_ky">
           <option value="">Chọn gói</option>
           <option>⭐ Gói 5 tuần — 4.990.000 ₫</option>
-          <option>⚡ Early Bird — 4.690.000 ₫ (trước 30/5)</option>
+          <option>⚡ Early Bird — 4.690.000 ₫ (trước 24/5)</option>
           <option>📅 Theo tuần — 1.190.000 ₫/tuần</option>
           <option>❓ Muốn tư vấn thêm</option>
         </select>
