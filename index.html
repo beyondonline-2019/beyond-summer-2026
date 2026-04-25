@@ -274,8 +274,18 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
   .festivals{padding:56px 5%}.festival-cards{grid-template-columns:1fr 1fr}
   .pronlab{padding:56px 5%}.pronlab-grid{grid-template-columns:1fr;gap:44px}
   .tt-sec{padding:56px 5%}
-  .tt-head,.tt-row{grid-template-columns:80px 1fr}
-  .tt-hc:last-child,.tt-cell:last-child{display:none}
+  /* Mobile timetable: switch to stacked cards instead of grid */
+  .tt-wrap{border-radius:16px;border:none;background:transparent;display:flex;flex-direction:column;gap:10px}
+  .tt-head{display:none}
+  .tt-row{display:flex;flex-direction:column;grid-template-columns:unset;border-top:none;border-radius:14px;overflow:hidden;border:2px solid var(--purple-lt);background:#fff}
+  .tt-row.hi{background:linear-gradient(135deg,#FFF9E6,var(--off-white));border-color:var(--yellow)}
+  .tt-day{border-right:none;border-bottom:2px solid var(--purple-lt);padding:10px 16px;font-size:.65rem;background:var(--purple-dk);color:var(--yellow) !important;justify-content:flex-start;font-weight:800}
+  .tt-row.hi .tt-day{background:var(--yellow);color:var(--purple-dk) !important}
+  .tt-cell{padding:14px 16px;border-right:none;border-top:1px solid var(--purple-lt)}
+  .tt-cell:first-of-type{border-top:none}
+  .tt-who{font-size:.55rem;margin-bottom:4px}
+  .tt-act{font-size:.88rem}
+  .tt-det{font-size:.74rem}
   .pricing{padding:56px 5%}.pricing-grid{grid-template-columns:1fr;max-width:380px}
   .discounts{grid-template-columns:1fr 1fr;max-width:380px}
   .messages{padding:56px 5%}.msg-grid{grid-template-columns:1fr}
@@ -283,6 +293,15 @@ footer{background:var(--purple-dk);padding:40px 10%;display:flex;align-items:cen
   .register{grid-template-columns:1fr;gap:40px;padding:56px 5%}
   .fg-row{grid-template-columns:1fr;gap:0}
   footer{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:480px){
+  .tt-act{font-size:.82rem}
+  .tt-det{font-size:.7rem;line-height:1.5}
+  .tt-day{font-size:.6rem;padding:9px 14px}
+  .tt-cell{padding:12px 14px}
+  .tt-who{font-size:.5rem}
+  .hero-title{font-size:2.4rem}
+  .hs-num{font-size:2rem}
 }
 </style>
 </head>
